@@ -1,0 +1,21 @@
+{ 
+ "name": "HEART", 
+ "description": "Left ventricular zone segmentation",
+ "reference": "Institut National Des Sciences Appliquées, Lyon",
+ "licence":"CC-BY-SA 4.0",
+ "relase":"1.0 30/12/2022",
+ "tensorImageSize": "2D",
+ "modality": { 
+   "0": "2EC", 
+ }, 
+ "labels": { 
+   "0": "Background", 
+   "1": "PZ",
+   "2": "Left ventricle", 
+   "3": "Left atrium"
+ }, 
+ "numTraining": 500, 
+ "numTest": 50,
+ "training":[{"image":"./imagesTr/prostate_16.nii.gz","label":"./labelsTr/prostate_16.nii.gz"},{"image":"./imagesTr/prostate_04.nii.gz","label":"./labelsTr/prostate_04.nii.gz"},...], 
+ "test": ["./imagesTs/prostate_08.nii.gz","./imagesTs/prostate_22.nii.gz","./imagesTs/prostate_30.nii.gz",...]
+ }
